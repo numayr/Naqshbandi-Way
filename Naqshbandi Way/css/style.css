@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #9c8cff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #eaf3ff;
+    font-family: "Josefin Sans";
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 3.1rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Cinzel";
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+  }
+
+#section1{
+    background-image: url('https://salawatframes.com/wp-content/uploads/2021/04/14b-jpeg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10% 15%;
+    padding-top: 20%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+#section1 h1{
+    font-size: xx-large;
+    color: #fff;
+    font-family: "Cinzel";
+    background-color: rgb(0, 0, 0, 0.95);
+    padding: 5%;
+    margin-bottom: 9rem;
+}
+
+#section1 .tagline{
+    font-size: xx-large;
+    color: #fff;
+    font-family: "Cairo";
+    line-height: 3;
+    padding: 3%;
+    margin-top: -5%;
+}
+#section1 .explore{
+    /* padding: 1rem 2.5rem;
+    text-align: center; */
+    font-size: x-large;
+}
+
+p{
+    font-size: xx-large;
+}
+
+
+
+#section2{
+    padding: 7% 15%;
+    text-align: center;
+
+}
+#section2 h1{
+    font-family: "Cinzel";
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+#section2 p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+    text-align: justify;
+}
+
+
+
+
+
+#section3{
+    padding: 7% 7%;
+    text-align: center;
+}
+
+#section3 .res{
+    font-family: "Cinzel";
+    font-weight: 700;
+    font-size: xx-large;
+}
+#section3 h1{
+    font-family: "Cairo";
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: 700;
+}
+#section3 h3{
+    font-family: "Cinzel";
+}
+.container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 3fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 20%;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-bottom: 20%;
+ }
+.resources{
+    padding: 3rem 1rem;
+    color: #000;
+    border-radius: 25px;
+    
+    
+}
+
+#section3 a{
+    text-decoration: none;
+    width: 1rem;
+    color: #fff;
+}
+/* https://zamzam.com/blog/wp-content/uploads/2021/07/shutterstock_718818415.jpg
+
+
+https://images.squarespace-cdn.com/content/v1/5b022d5d4eddecdafe5df3f6/1605484871161-J5Y6TFGFS2FW9CLY75GJ/Burdah3+%281%29.jpeg?format=1500w */
+
+.quran{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://zamzam.com/blog/wp-content/uploads/2021/07/shutterstock_718818415.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.khayrat{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/CBL_Quran.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.salawat{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://imam-us.org/wp-content/uploads/2018/10/The-Most-Powerful-Supplication_WSG.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.hadra{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://img.youtube.com/vi/WXNIOqXIBJs/maxresdefault.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.burda{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://ebnhussein1424.files.wordpress.com/2021/07/burdah31.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.naat{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://marhabayamustafa.files.wordpress.com/2016/07/coverr2-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.books{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://i2.wp.com/www.arabamerica.com/wp-content/uploads/2020/12/ee8839bbbbaffdc080b26064ba658691.jpg?fit=1000%2C569&ssl=1   ");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.duas{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RJgNEIq1P-fjcIpMLJI1mYpKB2jn1GRGyA&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.tasawwuf{
+    background-color: rgb(255, 255, 255, 0.7);
+    background-image: url("https://yt3.ggpht.com/vlP9srsvC9EzbwH6zWhhk0k-4yjEKmMN2YeIlUIVMvHgOTO8do9vWAPazt9Q7_Y9xEaSjgGu7Q=s900-c-k-c0x00ffffff-no-rj");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+
+
+#footer{
+    padding: 2% 15%;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    background-color: #002366;
+}
+
+#footer p{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-link{
+        color: #101010;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+        justify-items: stretch;
+        align-items: stretch;
+        
+     }
+
+
+}
+
