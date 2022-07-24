@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --opacity: rgba(255, 255, 255, 0.595);
+    /* --opacity: rgb(255, 255, 255, 0.7); */
 }
 
 html {
@@ -20,8 +26,6 @@ li {
 a {
     text-decoration: none;
 }
-
-
 
 .navbar {
     display: flex;
@@ -80,7 +84,14 @@ a {
 .navbar-fixed-top.scrolled {
     background-color: #000 !important;
     transition: background-color 200ms linear;
-  }
+}
+
+#section2, #section3 {
+    max-width: 2000px;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+}
 
 #section1{
     background-image: url('https://salawatframes.com/wp-content/uploads/2021/04/14b-jpeg.jpg');
@@ -92,6 +103,7 @@ a {
     text-align: center;
     padding-bottom: 2%;
 }
+
 #section1 h1{
     font-size: xx-large;
     color: #fff;
@@ -119,27 +131,18 @@ p{
     font-size: xx-large;
 }
 
-
-
 #section2{
     padding: 7% 15%;
     text-align: center;
 
 }
-#section2 h1{
-    font-family: "Cinzel";
-    font-weight: 700;
-    font-size: xx-large;
-}
 
 #section2 p{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: x-large;
+    font-size: 2.5em;
     text-align: justify;
+    margin-block-end: 1em;
 }
-
-
-
 
 
 #section3{
@@ -147,37 +150,46 @@ p{
     text-align: center;
 }
 
-#section3 .res{
+#section2 .title, #section3 .res{
     font-family: "Cinzel";
-    font-weight: 700;
-    font-size: xx-large;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-block-end: 6rem;
 }
+
 #section3 h1{
     font-family: "Cairo";
     display: inline-block;
-    font-size: xx-large;
+    font-size: 4em;
     font-weight: 700;
 }
+
 #section3 h3{
     font-family: "Cinzel";
+    font-size: 1.8em;
+    font-weight: 800;
 }
-.container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 3fr;
-    grid-column-gap: 5%;
-    grid-row-gap: 20%;
-    justify-items: stretch;
-    align-items: stretch;
-    margin-bottom: 20%;
- }
+
 .resources{
     padding: 3rem 1rem;
     color: #000;
-    border-radius: 25px;
-    
-    
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
 }
+
+.container {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 10rem;
+    grid-row-gap: 12rem;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
 
 #section3 a{
     text-decoration: none;
@@ -190,79 +202,52 @@ p{
 https://images.squarespace-cdn.com/content/v1/5b022d5d4eddecdafe5df3f6/1605484871161-J5Y6TFGFS2FW9CLY75GJ/Burdah3+%281%29.jpeg?format=1500w */
 
 .quran{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://zamzam.com/blog/wp-content/uploads/2021/07/shutterstock_718818415.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
+
 .khayrat{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/CBL_Quran.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 .salawat{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://imam-us.org/wp-content/uploads/2018/10/The-Most-Powerful-Supplication_WSG.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .hadra{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://img.youtube.com/vi/WXNIOqXIBJs/maxresdefault.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .burda{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://ebnhussein1424.files.wordpress.com/2021/07/burdah31.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .naat{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://marhabayamustafa.files.wordpress.com/2016/07/coverr2-2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .books{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://i2.wp.com/www.arabamerica.com/wp-content/uploads/2020/12/ee8839bbbbaffdc080b26064ba658691.jpg?fit=1000%2C569&ssl=1   ");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .duas{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RJgNEIq1P-fjcIpMLJI1mYpKB2jn1GRGyA&usqp=CAU");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
 .tasawwuf{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--opacity);
     background-image: url("https://yt3.ggpht.com/vlP9srsvC9EzbwH6zWhhk0k-4yjEKmMN2YeIlUIVMvHgOTO8do9vWAPazt9Q7_Y9xEaSjgGu7Q=s900-c-k-c0x00ffffff-no-rj");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
 }
 
-
-
 #footer{
-    padding: 2% 15%;
+    margin: 1rem auto 0;
+    padding: 4em 1rem;
     text-align: center;
     color: #fff;
     font-weight: 400;
@@ -272,12 +257,6 @@ https://images.squarespace-cdn.com/content/v1/5b022d5d4eddecdafe5df3f6/160548487
 #footer p{
     font-size: 1.4rem;
 }
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -325,14 +304,19 @@ https://images.squarespace-cdn.com/content/v1/5b022d5d4eddecdafe5df3f6/160548487
 
     .container {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-column-gap: 5%;
-        grid-row-gap: 5%;
+        grid-row-gap: 5rem;
         justify-items: stretch;
         align-items: stretch;
-        
-     }
+    }
 
 
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
